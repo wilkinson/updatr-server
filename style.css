@@ -1,0 +1,11 @@
+/*  CSS style sheet  */
+
+div.stdout {
+    color: black;
+}
+
+div.stderr {
+    color: red;
+}
+
+/*  vim:set syntax=css:  */
