@@ -15,7 +15,7 @@ DB      :=  updatr.couchone.com/testing
 APPRC   :=  $(APP)/.couchapprc
 
 R       :=  Rscript
-PKGDATA :=  r-pkgs.json
+PKGDATA :=  pkg-info.json
 DRIVER  :=  get-pkg-info.r
 
 CP      :=  rsync --archive

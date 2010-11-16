@@ -2,8 +2,8 @@
 
 #-  get-pkg-info.r ~~
 #   This is based on the code that Hadley sent me during our meeting today. It
-#   will output a one-line JSON file with package names as keys and package
-#   versions as values.
+#   will output a JSON file with package names as keys and versions as values.
+#   Note that it contains precisely ONE newline, which terminates the object.
 #                                                           ~~ SRW, 15 Nov 2010
 
 #-  DEPENDENCIES: rjson
@@ -17,6 +17,6 @@ names(pkgs) <- pkg$Package
 
 library(rjson)
 
-cat(toJSON(pkgs))
+cat(toJSON(pkgs), "\n", sep = "")
 
 #-  vim:set syntax=r:
